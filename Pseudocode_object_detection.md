@@ -19,7 +19,7 @@
 
 
 # Comparison -- we should decide whether we check for safety or for objects
-# I would say we check the chance and risks on false positives and false negatives in both 
+# I would say we check the chance and risks on false positives and false negatives in both (ROC Curve; see lecture slides)
 if up_segment[i] (size) >= low_segment[i] (size) :
   then segment == obstacle
   
