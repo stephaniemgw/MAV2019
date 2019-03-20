@@ -123,6 +123,7 @@ void orange_avoider_periodic(void)
         navigation_state = OBSTACLE_FOUND;
       } else {
         moveWaypointForward(WP_GOAL, moveDistance);
+        VERBOSE_PRINT("Current SAFE_POS (X,Y): %f , %f\n",stateGetPositionEnu_i()->x,stateGetPositionEnu_i()->y);
       }
 
       break;

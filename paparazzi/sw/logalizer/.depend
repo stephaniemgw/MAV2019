@@ -1,67 +1,65 @@
-export.cmo : /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/latlong.cmi \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/extXml.cmi \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/env.cmi \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/compat.cmi export.cmi
-export.cmx : /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/latlong.cmx \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/extXml.cmx \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/env.cmx \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/compat.cmx export.cmi
+export.cmo : /home/job/paparazzi/sw/lib/ocaml/latlong.cmi \
+    /home/job/paparazzi/sw/lib/ocaml/extXml.cmi \
+    /home/job/paparazzi/sw/lib/ocaml/env.cmi \
+    /home/job/paparazzi/sw/lib/ocaml/compat.cmi export.cmi
+export.cmx : /home/job/paparazzi/sw/lib/ocaml/latlong.cmx \
+    /home/job/paparazzi/sw/lib/ocaml/extXml.cmx \
+    /home/job/paparazzi/sw/lib/ocaml/env.cmx \
+    /home/job/paparazzi/sw/lib/ocaml/compat.cmx export.cmi
 export.cmi :
-log_file.cmo : /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/ocaml_tools.cmi \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/env.cmi
-log_file.cmx : /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/ocaml_tools.cmx \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/env.cmx
-logplotter.cmo : \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/ocaml_tools.cmi log_file.cmo \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/latlong.cmi \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/gtk_tools.cmi \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/fig.cmi \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/extXml.cmi export.cmi \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/env.cmi \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/debug.cmi
-logplotter.cmx : \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/ocaml_tools.cmx log_file.cmx \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/latlong.cmx \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/gtk_tools.cmx \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/fig.cmx \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/extXml.cmx export.cmx \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/env.cmx \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/debug.cmx
+log_file.cmo : /home/job/paparazzi/sw/lib/ocaml/ocaml_tools.cmi \
+    /home/job/paparazzi/sw/lib/ocaml/env.cmi
+log_file.cmx : /home/job/paparazzi/sw/lib/ocaml/ocaml_tools.cmx \
+    /home/job/paparazzi/sw/lib/ocaml/env.cmx
+logplotter.cmo : /home/job/paparazzi/sw/lib/ocaml/ocaml_tools.cmi \
+    log_file.cmo /home/job/paparazzi/sw/lib/ocaml/latlong.cmi \
+    /home/job/paparazzi/sw/lib/ocaml/gtk_tools.cmi \
+    /home/job/paparazzi/sw/lib/ocaml/fig.cmi \
+    /home/job/paparazzi/sw/lib/ocaml/extXml.cmi export.cmi \
+    /home/job/paparazzi/sw/lib/ocaml/env.cmi \
+    /home/job/paparazzi/sw/lib/ocaml/debug.cmi
+logplotter.cmx : /home/job/paparazzi/sw/lib/ocaml/ocaml_tools.cmx \
+    log_file.cmx /home/job/paparazzi/sw/lib/ocaml/latlong.cmx \
+    /home/job/paparazzi/sw/lib/ocaml/gtk_tools.cmx \
+    /home/job/paparazzi/sw/lib/ocaml/fig.cmx \
+    /home/job/paparazzi/sw/lib/ocaml/extXml.cmx export.cmx \
+    /home/job/paparazzi/sw/lib/ocaml/env.cmx \
+    /home/job/paparazzi/sw/lib/ocaml/debug.cmx
 play-nox.cmo : play_core.cmo
 play-nox.cmx : play_core.cmx
 play.cmo : play_core.cmo log_file.cmo \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/env.cmi
+    /home/job/paparazzi/sw/lib/ocaml/env.cmi
 play.cmx : play_core.cmx log_file.cmx \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/env.cmx
-play_core.cmo : /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/serial.cmi \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/ocaml_tools.cmi \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/extXml.cmi \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/env.cmi \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/defivybus.cmi \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/debug.cmi
-play_core.cmx : /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/serial.cmx \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/ocaml_tools.cmx \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/extXml.cmx \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/env.cmx \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/defivybus.cmx \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/debug.cmx
-plotter.cmo : /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/ocaml_tools.cmi \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/gtk_tools.cmi \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/env.cmi \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/defivybus.cmi
-plotter.cmx : /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/ocaml_tools.cmx \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/gtk_tools.cmx \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/env.cmx \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/defivybus.cmx
-sd2log.cmo : /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/serial.cmi \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/ocaml_tools.cmi \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/latlong.cmi \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/extXml.cmi \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/env.cmi \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/compat.cmi
-sd2log.cmx : /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/serial.cmx \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/ocaml_tools.cmx \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/latlong.cmx \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/extXml.cmx \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/env.cmx \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/compat.cmx
+    /home/job/paparazzi/sw/lib/ocaml/env.cmx
+play_core.cmo : /home/job/paparazzi/sw/lib/ocaml/serial.cmi \
+    /home/job/paparazzi/sw/lib/ocaml/ocaml_tools.cmi \
+    /home/job/paparazzi/sw/lib/ocaml/extXml.cmi \
+    /home/job/paparazzi/sw/lib/ocaml/env.cmi \
+    /home/job/paparazzi/sw/lib/ocaml/defivybus.cmi \
+    /home/job/paparazzi/sw/lib/ocaml/debug.cmi
+play_core.cmx : /home/job/paparazzi/sw/lib/ocaml/serial.cmx \
+    /home/job/paparazzi/sw/lib/ocaml/ocaml_tools.cmx \
+    /home/job/paparazzi/sw/lib/ocaml/extXml.cmx \
+    /home/job/paparazzi/sw/lib/ocaml/env.cmx \
+    /home/job/paparazzi/sw/lib/ocaml/defivybus.cmx \
+    /home/job/paparazzi/sw/lib/ocaml/debug.cmx
+plotter.cmo : /home/job/paparazzi/sw/lib/ocaml/ocaml_tools.cmi \
+    /home/job/paparazzi/sw/lib/ocaml/gtk_tools.cmi \
+    /home/job/paparazzi/sw/lib/ocaml/env.cmi \
+    /home/job/paparazzi/sw/lib/ocaml/defivybus.cmi
+plotter.cmx : /home/job/paparazzi/sw/lib/ocaml/ocaml_tools.cmx \
+    /home/job/paparazzi/sw/lib/ocaml/gtk_tools.cmx \
+    /home/job/paparazzi/sw/lib/ocaml/env.cmx \
+    /home/job/paparazzi/sw/lib/ocaml/defivybus.cmx
+sd2log.cmo : /home/job/paparazzi/sw/lib/ocaml/serial.cmi \
+    /home/job/paparazzi/sw/lib/ocaml/ocaml_tools.cmi \
+    /home/job/paparazzi/sw/lib/ocaml/latlong.cmi \
+    /home/job/paparazzi/sw/lib/ocaml/extXml.cmi \
+    /home/job/paparazzi/sw/lib/ocaml/env.cmi \
+    /home/job/paparazzi/sw/lib/ocaml/compat.cmi
+sd2log.cmx : /home/job/paparazzi/sw/lib/ocaml/serial.cmx \
+    /home/job/paparazzi/sw/lib/ocaml/ocaml_tools.cmx \
+    /home/job/paparazzi/sw/lib/ocaml/latlong.cmx \
+    /home/job/paparazzi/sw/lib/ocaml/extXml.cmx \
+    /home/job/paparazzi/sw/lib/ocaml/env.cmx \
+    /home/job/paparazzi/sw/lib/ocaml/compat.cmx

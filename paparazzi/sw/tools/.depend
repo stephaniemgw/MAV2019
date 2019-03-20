@@ -1,6 +1,4 @@
-find_free_msg_id.cmo : \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/extXml.cmi \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/env.cmi
-find_free_msg_id.cmx : \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/extXml.cmx \
-    /home/tom-hop/MAV2019/paparazzi/sw/lib/ocaml/env.cmx
+find_free_msg_id.cmo : /home/job/paparazzi/sw/lib/ocaml/extXml.cmi \
+    /home/job/paparazzi/sw/lib/ocaml/env.cmi
+find_free_msg_id.cmx : /home/job/paparazzi/sw/lib/ocaml/extXml.cmx \
+    /home/job/paparazzi/sw/lib/ocaml/env.cmx
